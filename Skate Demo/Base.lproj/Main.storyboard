@@ -309,6 +309,9 @@
                                                     <state key="normal" title="Save">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="saveButton_TouchUpInside:" destination="GyK-AL-mdB" eventType="touchUpInside" id="oFW-8o-McB"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -333,6 +336,9 @@
                                                     <state key="normal" title="Log Out">
                                                         <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="logoutButton_TouchUpInside:" destination="GyK-AL-mdB" eventType="touchUpInside" id="awE-G2-IoG"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -349,6 +355,11 @@
                             <outlet property="delegate" destination="GyK-AL-mdB" id="y6X-RF-yb0"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="emailTextField" destination="Pxi-r7-aR6" id="OkQ-sa-KSx"/>
+                        <outlet property="profileImage" destination="cKp-je-gHB" id="amV-dh-7Fu"/>
+                        <outlet property="usernameTextField" destination="XDz-yg-3U5" id="9tT-Oh-L6a"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQJ-5S-W8T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
