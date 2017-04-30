@@ -18,6 +18,7 @@
 		9F34961A1EA8FF2F00D30285 /* ProfileHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3496191EA8FF2F00D30285 /* ProfileHeaderCollectionReusableView.swift */; };
 		9F34961C1EA911F700D30285 /* userPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34961B1EA911F700D30285 /* userPostApi.swift */; };
 		9F3EE3DC1E9D099000D0BC69 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3EE3DB1E9D099000D0BC69 /* User.swift */; };
+		9F442A5D1EB61A5B00C5D6F0 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F442A5C1EB61A5B00C5D6F0 /* SettingTableViewController.swift */; };
 		9F4763691E93AE1E00D74370 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4763681E93AE1E00D74370 /* ProfileViewController.swift */; };
 		9F47636C1E93B42900D74370 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47636B1E93B42900D74370 /* AuthService.swift */; };
 		9F47636E1E93C00200D74370 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F47636D1E93C00200D74370 /* Config.swift */; };
@@ -63,6 +64,7 @@
 		9F3496191EA8FF2F00D30285 /* ProfileHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		9F34961B1EA911F700D30285 /* userPostApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userPostApi.swift; sourceTree = "<group>"; };
 		9F3EE3DB1E9D099000D0BC69 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9F442A5C1EB61A5B00C5D6F0 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		9F4763681E93AE1E00D74370 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9F47636B1E93B42900D74370 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		9F47636D1E93C00200D74370 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				9F4763681E93AE1E00D74370 /* ProfileViewController.swift */,
+				9F442A5C1EB61A5B00C5D6F0 /* SettingTableViewController.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				9F2B1E5E1EAA3706006BB363 /* FollowApi.swift in Sources */,
 				9FB108671EA7C3A500AD5AF6 /* UserApi.swift in Sources */,
 				9FE94C181E796B75009B7B3F /* AppDelegate.swift in Sources */,
+				9F442A5D1EB61A5B00C5D6F0 /* SettingTableViewController.swift in Sources */,
 				9F2B1E601EAA67D2006BB363 /* FeedApi.swift in Sources */,
 				9FDDF8821EAB8CE50010198D /* ExploreViewController.swift in Sources */,
 				9FE47D791E9693830030E817 /* FeedTableViewCell.swift in Sources */,

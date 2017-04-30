@@ -13,6 +13,10 @@ protocol ProfileHeaderCollectionReusableViewDelegate {
     func updateFollowButton(forUser user: User)
 }
 
+protocol ProfileHeaderCollectionReusableViewDelegateSwitchSettingVC {
+    func goToSettingVC()
+}
+
 
 class ProfileHeaderCollectionReusableView: UICollectionReusableView {
     
@@ -32,6 +36,7 @@ class ProfileHeaderCollectionReusableView: UICollectionReusableView {
     
     var delegate: ProfileHeaderCollectionReusableViewDelegate?
     
+    var delegate2: ProfileHeaderCollectionReusableViewDelegateSwitchSettingVC?
     
     var user: User? {
         
@@ -83,6 +88,11 @@ class ProfileHeaderCollectionReusableView: UICollectionReusableView {
             
             followButton.setTitle("Edit", for: UIControlState.normal)
             
+            //Segue to setting VC
+            
+            followButton.addTarget(self, action: #selector(self.goToSettingVC), for: UIControlEvents.touchUpInside)
+
+            
         } else {
             
             //If user is not current edit become follow button
@@ -90,6 +100,12 @@ class ProfileHeaderCollectionReusableView: UICollectionReusableView {
             updateStateFollowButton()
             
         }
+        
+    }
+    
+    func goToSettingVC() {
+        
+        delegate2?.goToSettingVC()
         
     }
     

@@ -101,9 +101,22 @@ extension ProfileViewController: UICollectionViewDataSource {
         let headerViewCell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "ProfileHeaderCollectionReusableView", for: indexPath) as! ProfileHeaderCollectionReusableView
         if let user = self.user {
             headerViewCell.user = user
+            
+            headerViewCell.delegate2 = self
+            
         }
         
         return headerViewCell
+    }
+    
+}
+
+extension ProfileViewController: ProfileHeaderCollectionReusableViewDelegateSwitchSettingVC {
+    
+    func goToSettingVC() {
+        
+        performSegue(withIdentifier: "Profile_SettingSegue", sender: nil)
+        
     }
     
 }
