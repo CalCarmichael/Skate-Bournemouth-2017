@@ -67,6 +67,13 @@ class SaveSpotViewController: UIViewController {
         
         
     }
+    
+    @IBAction func addButton_TouchUpInside(_ sender: Any) {
+    
+        dismiss(animated: true, completion: nil)
+    
+    }
+    
 
 }
 
