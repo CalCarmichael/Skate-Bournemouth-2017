@@ -191,6 +191,13 @@ class ViewController: UIViewController, SideBarDelegate, MGLMapViewDelegate {
     //Information button - turn this into 360 image
     
     func mapView(_ mapView: MGLMapView, leftCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
+        
+        performSegue(withIdentifier: "EditProfile", sender: nil)
+        
+        
+        
+        
+        
         return UIButton(type: .detailDisclosure)
     }
 

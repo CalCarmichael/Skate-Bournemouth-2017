@@ -14,8 +14,9 @@ class SaveSpotViewController: UIViewController {
     
     @IBOutlet weak var skateTitleText: UITextField!
     @IBOutlet weak var skateStyleText: UITextField!
-    
     @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var popUpView: UIView!
+    
     
     var options = ["Select Type", "Skatepark", "Street Skating", "Personal Spots"]
     
@@ -30,9 +31,19 @@ class SaveSpotViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        popUpView.layer.cornerRadius = 10
+        popUpView.layer.masksToBounds = true
+        
+    }
+    
+    
+    @IBAction func cancelButton(_ sender: Any) {
+    
+        dismiss(animated: true, completion: nil)
     
     }
+    
+    
 
     @IBAction func addPinAndSaveLocation(_ sender: Any) {
     
